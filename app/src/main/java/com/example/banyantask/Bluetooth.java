@@ -31,6 +31,7 @@ public class Bluetooth extends AppCompatActivity {
         deviceName1 = findViewById(R.id.deviceName);
         deviceMACAddress1 = findViewById(R.id.deviceMACAddress);
 
+
         if (!getPackageManager().hasSystemFeature(PackageManager.FEATURE_BLUETOOTH)) {
             Toast.makeText(this, "Bluetooth not supported on this device", Toast.LENGTH_SHORT).show();
             finish();
